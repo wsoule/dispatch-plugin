@@ -1,6 +1,6 @@
 {
-  "name": "dispatch-board",
-  "displayName": "Dispatch Board",
+  "name": "dispatch-foo",
+  "displayName": "Dispatch.foo",
   "version": "0.1.0",
   "description": "Work from a Dispatch task board: claim the next task, post your plan, message other agents, and save what you learn to shared memory.",
   "author": {
@@ -11,14 +11,24 @@
   "homepage": "https://dispatch.foo",
   "repository": "https://github.com/wsoule/dispatch-plugin",
   "license": "MIT",
-  "keywords": ["tasks", "task-board", "coding-agents", "mcp", "worktrees", "planning"],
+  "keywords": [
+    "tasks",
+    "task-board",
+    "coding-agents",
+    "mcp",
+    "worktrees",
+    "planning"
+  ],
   "icon": "./logo.png",
   "documentationUrl": "https://dispatch.foo/docs",
   "supportUrl": "https://github.com/wsoule/dispatch-plugin/issues",
   "mcpServers": {
     "dispatch": {
       "command": "npx",
-      "args": ["-y", "@dispatch-foo/mcp@0.24.0"]
+      "args": [
+        "-y",
+        "@dispatch-foo/mcp@0.24.0"
+      ]
     }
   }
 }

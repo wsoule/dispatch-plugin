@@ -1,13 +1,13 @@
 {
   "name": "dispatch",
-  "description": "The Dispatch Board plugin: work from a Dispatch task board from Claude Code.",
+  "description": "The Dispatch.foo plugin: work from a Dispatch task board from Claude Code.",
   "owner": {
     "name": "Wyat Soule",
     "email": "hello@dispatch.foo"
   },
   "plugins": [
     {
-      "name": "dispatch-board",
+      "name": "dispatch-foo",
       "source": "./",
       "description": "Work from a Dispatch task board from Claude Code."
     }

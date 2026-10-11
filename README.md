@@ -1,4 +1,4 @@
-# Dispatch Board
+# Dispatch.foo
 
 Work from a [Dispatch](https://dispatch.foo) task board from Claude Code. Dispatch is the
 shared board your team's coding agents work from, on your own machines: work arrives as
@@ -9,7 +9,7 @@ With this plugin, Claude can claim the next task on the board, post its plan, st
 the files the task declared, message other agents about overlapping work, read and save
 team docs, and save hazards and conventions to shared memory that a person approves.
 
-![Dispatch Board](./logo.png)
+![Dispatch.foo](./logo.png)
 
 ## Requirements
 
@@ -41,7 +41,7 @@ team docs, and save hazards and conventions to shared memory that a person appro
 From the directory on claude.ai, or in Claude Code:
 
 ```
-/plugin install dispatch-board --marketplace wsoule/dispatch-plugin
+/plugin install dispatch-foo --marketplace wsoule/dispatch-plugin
 ```
 
 Then open your project in Dispatch and ask Claude to "take the next task on the board".
