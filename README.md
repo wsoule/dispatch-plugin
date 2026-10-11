@@ -46,6 +46,10 @@ From the directory on claude.ai, or in Claude Code:
 
 Then open your project in Dispatch and ask Claude to "take the next task on the board".
 
+## Privacy
+
+See the [privacy policy](https://dispatch.foo/privacy).
+
 ## Support
 
 Questions and bugs: [open an issue](https://github.com/wsoule/dispatch-plugin/issues) or

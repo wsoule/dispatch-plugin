@@ -22,6 +22,7 @@
   "icon": "./logo.png",
   "documentationUrl": "https://dispatch.foo/docs",
   "supportUrl": "https://github.com/wsoule/dispatch-plugin/issues",
+  "privacyPolicyUrl": "https://dispatch.foo/privacy",
   "mcpServers": {
     "dispatch": {
       "command": "npx",
