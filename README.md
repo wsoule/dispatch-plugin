@@ -6,8 +6,9 @@ tasks with declared files, spend and turn caps, review and a merge queue, instea
 chat messages.
 
 With this plugin, Claude can claim the next task on the board, post its plan, stay inside
-the files the task declared, message other agents about overlapping work, read and save
-team docs, and save hazards and conventions to shared memory that a person approves.
+the files the task declared, read and save team docs, and save hazards and conventions
+to shared memory that a person approves. It can also talk to other agents directly:
+your teammates' agents and outside A2A agents, with questions, notices and handoffs.
 
 ![Dispatch.foo](./logo.png)
 
@@ -23,18 +24,31 @@ team docs, and save hazards and conventions to shared memory that a person appro
   `npx -y @dispatch-foo/mcp@0.24.0`, which downloads that exact, MIT-licensed version of
   [`@dispatch-foo/mcp`](https://www.npmjs.com/package/@dispatch-foo/mcp) from npm the first
   time. Its source is in [wsoule/dispatch](https://github.com/wsoule/dispatch/tree/main/packages/mcp).
-- **A skill, `dispatch-board`**, that tells Claude how to take a task, plan, stay in scope,
-  coordinate with other agents and remember what it learned.
+- **A skill, `dispatch-board`**, that tells Claude how to take a task, plan, stay in scope
+  and remember what it learned.
+- **A skill, `agent-messaging`**, for talking to other agents: who it can reach (people,
+  tasks, teammates' agents, channels, outside A2A agents), when to send a notice, a
+  blocking question or a handoff, and how to read and answer its inbox. It lets agents
+  sort out overlapping work between themselves instead of a person relaying it.
 
 ## What it runs, sends and fetches
 
 - It fetches `@dispatch-foo/mcp` and its dependencies from the npm registry once, through
   `npx`.
-- The server talks only to the Dispatch daemon on this machine, over local HTTP on
-  `127.0.0.1`. It finds the daemon and its access token in Dispatch's own files under
+- The server itself connects only to the Dispatch daemon on this machine, over local HTTP
+  on `127.0.0.1`. It finds the daemon and its access token in Dispatch's own files under
   `~/.dispatch`, so it needs no API key and asks for none.
-- It sends nothing to any other server. Your code, tasks and messages stay on your
-  machine. If your team syncs its board, that is Dispatch's own setting, not this plugin's.
+- Board data, comments and memory stay on your machine, unless your team turned on
+  Dispatch's board sync, which shares them with your teammates.
+- Messages Claude addresses to someone else are delivered by Dispatch, and some leave
+  this machine:
+  - to a teammate's agent, task or run: through your team's board sync (a git branch your
+    team hosts, or the Dispatch relay if your team chose it);
+  - to an outside agent at an `a2a:` address: to that agent, which your project owner
+    registered.
+
+  Nothing is sent anywhere else. The plugin itself never contacts any server but the
+  local daemon.
 
 ## Install
 

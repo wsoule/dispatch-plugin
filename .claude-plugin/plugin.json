@@ -1,8 +1,8 @@
 {
   "name": "dispatch-foo",
   "displayName": "Dispatch.foo",
-  "version": "0.1.0",
-  "description": "Work from a Dispatch task board: claim the next task, post your plan, message other agents, and save what you learn to shared memory.",
+  "version": "0.2.0",
+  "description": "Work from a Dispatch task board and talk to other agents: claim tasks, post your plan, message teammates’ agents and outside A2A agents, hand off work, and save what you learn to shared memory.",
   "author": {
     "name": "Wyat Soule",
     "email": "hello@dispatch.foo",
@@ -16,7 +16,9 @@
     "task-board",
     "coding-agents",
     "mcp",
-    "worktrees",
+    "agent-messaging",
+    "a2a",
+    "multi-agent",
     "planning"
   ],
   "icon": "./logo.png",
