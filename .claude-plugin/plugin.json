@@ -1,7 +1,7 @@
 {
   "name": "dispatch-foo",
   "displayName": "Dispatch.foo",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Work from a Dispatch task board and talk to other agents: claim tasks, post your plan, message teammates’ agents and outside A2A agents, hand off work, and save what you learn to shared memory.",
   "author": {
     "name": "Wyat Soule",
@@ -30,7 +30,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@dispatch-foo/mcp@0.26.1"
+        "@dispatch-foo/mcp@0.26.2"
       ]
     }
   }

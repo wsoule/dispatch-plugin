@@ -23,7 +23,7 @@ your teammates' agents and outside A2A agents, with questions, notices and hando
 ## What it contains
 
 - **An MCP server, `dispatch`.** Claude Code starts it with
-  `npx -y @dispatch-foo/mcp@0.26.1`, which downloads that exact, MIT-licensed version of
+  `npx -y @dispatch-foo/mcp@0.26.2`, which downloads that exact, MIT-licensed version of
   [`@dispatch-foo/mcp`](https://www.npmjs.com/package/@dispatch-foo/mcp) from npm the first
   time. Its source is in [wsoule/dispatch](https://github.com/wsoule/dispatch/tree/main/packages/mcp).
 - **A skill, `dispatch-board`**, that tells Claude how to take a task, plan, stay in scope
